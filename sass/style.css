@@ -1,0 +1,176 @@
+body .statistics-section, body .service-section, body .profile-section {
+  padding-inline: 5%;
+  margin-block: 1rem;
+}
+
+body .statistics-section .statistics-heading, body .standard-section .standard-heading, body .service-section .service-heading, body .visa-section .visa-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #667082;
+  margin-bottom: 1rem;
+}
+body .statistics-section .statistics-heading h2, body .standard-section .standard-heading h2, body .service-section .service-heading h2, body .visa-section .visa-heading h2 {
+  margin: 0;
+}
+
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-left .standard-blocks-circle, body .service-section .service-feature .service-feature-block .service-feature-block-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .account-section .account-top, body .standard-section .standard-chunk .standard-blocks .standard-blocks-right .standard-blocks-bottom, body .standard-section .standard-chunk .standard-blocks .standard-blocks-right .standard-blocks-top, body .visa-section .visa-body .visa-card .visa-card-block .visa-name, body .visa-section .visa-body .visa-card .visa-card-block .visa-chip-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body .standard-section .standard-chunk {
+  display: flex;
+  flex-direction: column;
+}
+
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-left .standard-blocks-circle, body .service-section .service-feature .service-feature-block .service-feature-block-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+body .profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .profile-section .profile-photo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+body .profile-section .profile-photo img {
+  width: 100%;
+  z-index: 0;
+}
+body .visa-section {
+  padding-inline: 5%;
+}
+body .visa-section .visa-body {
+  display: flex;
+  gap: 1.5rem;
+  overflow: scroll;
+}
+body .visa-section .visa-body::-webkit-scrollbar {
+  display: none;
+}
+body .visa-section .visa-body .visa-card {
+  display: flex;
+}
+body .visa-section .visa-body .visa-card .visa-card-block {
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(-45deg, #3dd0e6, #2b84f8);
+  color: #fffeff;
+  width: 80vw;
+}
+body .visa-section .visa-body .visa-card .visa-card-block .visa-chip-type {
+  margin-bottom: 2.5rem;
+}
+body .visa-section .visa-body .visa-card .visa-card-block .visa-chip-type svg {
+  width: 3rem;
+  height: 3rem;
+}
+body .service-section .service-feature {
+  display: flex;
+  justify-content: space-between;
+}
+body .service-section .service-feature .service-feature-block {
+  width: 4rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+body .service-section .service-feature .service-feature-block .service-feature-block-circle {
+  background-color: #e3edfc;
+}
+body .service-section .service-feature .service-feature-block .service-feature-block-circle svg {
+  fill: #1472f8;
+}
+body .service-section .service-feature .service-feature-block a {
+  text-decoration: none;
+  color: #101728;
+}
+body .standard-section {
+  padding: 1rem 5%;
+}
+body .standard-section .standard-chunk {
+  gap: 1rem;
+}
+body .standard-section .standard-chunk .standard-blocks {
+  display: flex;
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 1rem;
+  box-shadow: 2px 3px 10px hsla(219, 12%, 45%, 0.369);
+  transition: 350ms;
+}
+body .standard-section .standard-chunk .standard-blocks:hover {
+  transform: scale(105%);
+}
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-left #blockCircle1 {
+  background-color: #e3edfc;
+}
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-left #blockCircle1 svg {
+  fill: #1472f8;
+}
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-left #blockCircle2 {
+  background-color: #fee9ee;
+}
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-left #blockCircle2 svg {
+  fill: #e52157;
+}
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-right {
+  width: 100%;
+}
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-right .block-money-blue {
+  color: #1472f8;
+}
+body .standard-section .standard-chunk .standard-blocks .standard-blocks-right .block-money-red {
+  color: #e52157;
+}
+body .account-section {
+  padding: 15% 5% 5% 5%;
+  padding-bottom: 3.2rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: linear-gradient(-45deg, #3dd0e6, #55a2fa, #2b84f8, #55a2fa);
+  color: #fffeff;
+}
+body .account-section .account-top {
+  margin-bottom: 1.7rem;
+}
+body .account-section .account-top .account-top-back {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body .account-section .account-top .account-top-back a {
+  color: #fffeff;
+  text-decoration: none;
+}
+body .account-section .account-top .account-top-back a h5 {
+  margin: 0;
+}
+body .account-section .account-top .account-top-help svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

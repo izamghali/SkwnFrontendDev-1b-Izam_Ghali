@@ -1,0 +1,37 @@
+%standard-section {
+    padding-inline: 5%;
+    margin-block: 1rem;
+}
+
+%standard-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $standard-grey-color-1;
+    margin-bottom: 1rem;
+    h2 { margin: 0;}
+}
+
+%standard-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%standard-flex-justify-between-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%standard-flex-column {
+    display: flex;
+    flex-direction: column
+}
+
+%standard-circle {
+    @extend %standard-flex-center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}

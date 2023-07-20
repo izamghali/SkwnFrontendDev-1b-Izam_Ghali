@@ -1,0 +1,202 @@
+@import "./breakpoints";
+@import "./variables"; 
+@import "./placeholders"; 
+
+body {
+    background-color: $standard-white;
+    padding: 0;
+    margin: 0;
+
+    .profile-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend %standard-section;
+        @extend %standard-section;
+        
+        .profile-heading {
+
+        }
+        
+        .profile-photo {
+            object-fit: contain;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            z-index: 1;
+            overflow: hidden;
+            img {
+                width: 100%;
+                z-index: 0;
+            }
+        }
+    }
+
+    .visa-section {
+        padding-inline: 5%;
+        .visa-heading {
+            @extend %standard-heading;
+        }
+
+        .visa-body {
+            display: flex;
+            gap: 1.5rem;
+            overflow: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            } 
+            .visa-card {
+                display: flex;
+                .visa-card-block {
+                    padding: 1rem;
+                    border-radius: 12px;
+                    background: linear-gradient(-45deg, $standard-card-color-2, $standard-card-color-1);
+                    color: #fffeff;
+                    width: 80vw;
+                    .visa-chip-type {
+                        @extend %standard-flex-justify-between-align-center;
+                        margin-bottom: 2.5rem;
+                        svg {
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                    }
+    
+                    .visa-number {
+    
+                    }
+    
+                    .visa-name {
+                        @extend %standard-flex-justify-between-align-center;
+                    }
+                }
+            }
+        }
+    }
+    
+    .service-section {
+        @extend %standard-section;
+        .service-heading {
+            @extend %standard-heading;
+        }
+
+        .service-feature {
+            display: flex;
+            justify-content: space-between;
+            .service-feature-block {
+                width: 4rem;
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.4rem;
+                
+                .service-feature-block-circle {
+                    @extend %standard-circle;
+                    background-color: $standard-accent-color-2;
+                    svg { fill: $standard-accent-color-1; }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $standard-black;
+                }
+            }
+        }
+    }
+
+    .standard-section {
+        padding: 1rem 5%;
+        
+        .standard-heading {
+            @extend %standard-heading;
+        }
+
+        .standard-chunk {
+            gap: 1rem;
+            @extend %standard-flex-column;
+            .standard-blocks {
+                display: flex;
+                padding: 1rem;
+                border-radius: 8px;
+                gap: 1rem;
+                box-shadow: 2px 3px 10px hsla(219, 12%, 45%, 0.369);
+                transition: $standard-transition-duration;
+                &:hover { transform: scale(105%) }
+                
+                .standard-blocks-left {
+                    .standard-blocks-circle { @extend %standard-circle; }
+
+                    #blockCircle1 {
+                        background-color: $standard-accent-color-2;
+                        svg { fill: $standard-accent-color-1; }
+                    }
+                    #blockCircle2 {
+                        background-color: $standard-accent-color-4;
+                        svg { fill: $standard-accent-color-3; }
+                    }
+                }
+
+                .standard-blocks-right {
+                    width: 100%;
+                    .standard-blocks-top {
+                        @extend %standard-flex-justify-between-align-center;
+                    }
+
+                    .standard-blocks-middle {
+                    }
+                    
+                    .standard-blocks-bottom {
+                        @extend %standard-flex-justify-between-align-center;
+                    }
+                    .block-money-blue {
+                        color: $standard-accent-color-1
+                    }
+
+                    .block-money-red {
+                        color: $standard-accent-color-3;
+                    }
+                }
+            }
+        }
+    }
+
+    // finance-page
+    .account-section {
+        padding: 15% 5% 5% 5%;
+        padding-bottom: 3.2rem;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background: linear-gradient(-45deg, $standard-card-color-2, $standard-card-color-3, $standard-card-color-1, $standard-card-color-3);
+        color: #fffeff;
+        
+        .account-top {
+            @extend %standard-flex-justify-between-align-center;
+            margin-bottom: 1.7rem;
+            .account-top-back {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                a {
+                    color: #fffeff;
+                    text-decoration: none;
+                    h5 { margin: 0;}
+                }
+            }
+
+            .account-top-help {
+                svg {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .statistics-section {
+        @extend %standard-section;
+        .statistics-heading {
+            @extend %standard-heading;
+        }
+    }
+
+}
